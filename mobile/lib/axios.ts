@@ -3,7 +3,7 @@ import * as Sentry from "@sentry/react-native";
 import { useAuth } from "@clerk/clerk-expo";
 import { useCallback } from "react";
 
-const API_URL = "https://whisper-app.up.railway.app/api";
+const API_URL = "https://whisper-app-0shd.onrender.com";
 
 // this is the same thing we did with useEffect setup but it's optimized version - it's better!!
 

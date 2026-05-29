@@ -1,5 +1,5 @@
-import { Redirect, Tabs } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
+import { Redirect, Tabs } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
 import { useAuth } from "@clerk/clerk-expo";
 
 const TabsLayout = () => {
@@ -20,18 +20,16 @@ const TabsLayout = () => {
           paddingTop: 8,
         },
         tabBarActiveTintColor: "#F4A261",
-        tabBarInactiveTintColor: "6B6B70",
-        tabBarLabelStyle: {
-          fontSize: 12,
-          fontWeight: "600",
-        },
+        tabBarInactiveTintColor: "#6B6B70",
+        tabBarLabelStyle: { fontSize: 12, fontWeight: "600" },
       }}
     >
-      <Tabs.Screen name="index" 
+      <Tabs.Screen
+        name="index"
         options={{
-          title:"Chats",
+          title: "Chats",
           tabBarIcon: ({ color, focused, size }) => (
-            <Ionicons 
+            <Ionicons
               name={focused ? "chatbubbles" : "chatbubbles-outline"}
               size={size}
               color={color}
@@ -39,15 +37,12 @@ const TabsLayout = () => {
           ),
         }}
       />
-      <Tabs.Screen name="profile"
+      <Tabs.Screen
+        name="profile"
         options={{
-          title:"Profile",
+          title: "Profile",
           tabBarIcon: ({ color, focused, size }) => (
-            <Ionicons 
-              name={focused ? "person" : "person-outline"}
-              size={size}
-              color={color}
-            />
+            <Ionicons name={focused ? "person" : "person-outline"} size={size} color={color} />
           ),
         }}
       />

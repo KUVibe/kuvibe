@@ -4,7 +4,7 @@ import { QueryClient } from "@tanstack/react-query";
 import { Chat, Message, MessageSender } from "@/types";
 import * as Sentry from "@sentry/react-native";
 
-const SOCKET_URL = "https://whisper-app.up.railway.app";
+const SOCKET_URL = "https://whisper-app-0shd.onrender.com";
 
 interface SocketState {
   socket: Socket | null;
