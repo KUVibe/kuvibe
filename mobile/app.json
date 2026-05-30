@@ -47,7 +47,9 @@
           "project": "whisper-app",
           "organization": "ananda-1w"
         }
-      ]
+      ],
+      "expo-font",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
