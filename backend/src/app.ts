@@ -28,12 +28,11 @@ app.use(
 app.use(express.json()); // parses incoming JSON request bodies and makes them available as req.body in your route handlers
 app.use(clerkMiddleware());
 
-app.get("/health", (req, res) => {
-  res.json({ status: "ok", message: "Server is running" });
-});
-
-app.head("/health", (req, res) => {
-  res.status(200).end();
+app.use("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    message: "Server is running"
+  });
 });
 
 app.use("/api/auth", authRoutes);
